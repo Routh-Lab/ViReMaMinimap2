@@ -1,6 +1,10 @@
 # ViReMaMinimap2
 Docker file for a version of ViReMa that can use minimap2. Currently still buggy.
 
+## ViReMa Setting When Using Minimap2
+This has not been rigorously evaluated but the command being used to run minimap2 on nanopore data is:
+python ./ViReMa.py ./FHV_Genome.txt ./FHV_nanopore.fastq FHV_recombinations.SAM --Seed 50 --MicroInDel_Length 5 -BED --Output_Dir FHV_Test_1 --Aligner minimap2 --ErrorDensity 25,200
+
 ## **Docker Setup (~10 minutes)**
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2. Download this GitHub repository's files as a .zip file and unzip it as a new folder.
